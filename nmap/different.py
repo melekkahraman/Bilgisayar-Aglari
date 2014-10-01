@@ -13,5 +13,6 @@ dosya.write(cikti)
 dosya.close()
 file1 = "/home/melek/nmapfile.txt"
 file2 = "/home/melek/different.txt"
+print 'Satırlarında değişiklik yapılmıştır'
 diff = difflib.ndiff(open(file1).readlines(),open(file2).readlines())
 print ''.join(diff)

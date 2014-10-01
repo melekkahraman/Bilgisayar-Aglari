@@ -4,7 +4,7 @@ import filecmp
 import subprocess
 import difflib
 d=difflib.Differ()
-komut="arp -a"
+komut="nmap 255.255.255.255"
 i=0
 islem = subprocess.Popen(komut, shell = True, stdout = subprocess.PIPE)
 cikti = islem.communicate()[0]

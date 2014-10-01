@@ -15,5 +15,6 @@ dosya.write(cikti)
 dosya.close()
 file1 = "/home/melek/mainfile.txt"
 file2 = "/home/melek/ip.txt"
+print 'Satırlarında değişiklik yapılmıştır'
 diff = difflib.ndiff(open(file1).readlines(),open(file2).readlines())
 print ''.join(diff)
